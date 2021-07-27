@@ -8,26 +8,29 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: center; */
+  align-items: center;
+  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .TopBar {
-  background-color: #7fa8fa;
+  background-color: #0441b9;
   height: 10%;
   width: 100%;
 }
 
 .TripleLayout {
   /* float:left; */
+  /* display: flex; */
+  height: 90.7vh;
+  width: 100vw;
   display: flex;
 }
 
 .SideBar {
-  background-color: #7feb64;
-  width: 20%;
+  background-color: #23ad01;
+  width: 19%;
   height: 100%;
   float: left;
 }
@@ -35,25 +38,28 @@
 .MidBotLayout {
   /* some code */
   float: right;
-  width: 80%;
-  height: 90%;
-  display: block;
+  width: 88vw;
+  /* height: 90vh; */
+  display: -ms-inline-flexbox;
 }
 
 .Middle {
-  height: 70%;
-  width:100%;
-  background-color: #dd74f0;
+  height: 80.7vh;
+  /* width:70vw; */
+  /* overflow: scroll; */
+  background-color: #8f499b;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .Bottom {
-  background-color: #e96a70;
-  width:100%;
-  height: 20%;
+  background-color: #b85c60;
+  /* width:70vw; */
+  height: 10vh;
   /* float:inline-end; */
 }
-button{
-  background-color: #42bdf2;
+button {
+  background-color: #024a69;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 60px;
@@ -61,3 +67,12 @@ button{
   margin: 10px 0px;
   cursor: pointer;
 }
+thead {
+  background-color: #7df6fa;
+  /* padding: 10px; */
+}
+tbody {
+  background-color: #7fa8fa;
+  padding: 10px;
+}
+
