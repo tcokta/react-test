@@ -46,7 +46,7 @@
 .Middle {
   height: 80.7vh;
   /* width:70vw; */
-  /* overflow: scroll; */
+  overflow: scroll;
   background-color: #8f499b;
   /* align-items: center;
   justify-content: center; */

@@ -292,7 +292,7 @@ function App() {
           </div>
           <div className="MidBotLayout">
             <div className="Middle">
-              <TableScrollbar>
+              {/* <TableScrollbar> */}
                 <table
                   {...getTableProps()}
                   style={{ border: "solid 1px black" }}
@@ -365,7 +365,7 @@ function App() {
                     })}
                   </tbody>
                 </table>
-              </TableScrollbar>
+              {/* </TableScrollbar> */}
             </div>
             <div className="Bottom">
               <button onClick={addEntities} className="addBtn">
