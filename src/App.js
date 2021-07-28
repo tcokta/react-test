@@ -69,7 +69,7 @@ function App() {
   }, []);
 
   function addEntities(e) {
-    console.log("You clicked me");
+    // console.log("You clicked me");
     setData([
       ...data,
       {
@@ -164,26 +164,61 @@ function App() {
       },
     ]);
   }
-  //   const data = React.useMemo(
-  //     () => [
-  //       {
-  //         col1: 'Minsk',
-  //         col2: '27',
-  //         col3: 'rain',
-  //       },
-  //       {
-  //         col1: 'Vilnius',
-  //         col2: '30',
-  //         col3: 'rain',
-  //       },
-  //       {
-  //         col1: 'London',
-  //         col2: '23',
-  //         col3: 'rain',
-  //       },
-  //     ],
-  //     []
-  // )
+
+  function generateEntities(e) {
+    for (let i = 1; i < 40; i++) {
+    console.log("You clicked me");
+
+      setData([
+        ...data,
+        {
+          show: {
+            name: "Terminator",
+            language: "Russian",
+            genres: ["Drama", "Romance"],
+            status: "Ended",
+            runtime: 600,
+          },
+        },
+        {
+          show: {
+            name: "Mihaela",
+            language: "Russian",
+            genres: ["Drama", "Romance"],
+            status: "Ended",
+            runtime: 90,
+          },
+        },
+        {
+          show: {
+            name: "was",
+            language: "Korean",
+            genres: ["Drama", "Romance"],
+            status: "Ended",
+            runtime: 105,
+          },
+        },
+        {
+          show: {
+            name: "here",
+            language: "English",
+            genres: ["Drama", "Romance"],
+            status: "Ended",
+            runtime: 400,
+          },
+        },
+        {
+          show: {
+            name: "muahahah",
+            language: "Russian",
+            genres: ["Drama", "Action"],
+            status: "Ended",
+            runtime: 105,
+          },
+        },
+      ]);
+    }
+  }
 
   const columns = React.useMemo(
     () => [
@@ -225,7 +260,7 @@ function App() {
     rows,
     prepareRow,
     state,
-    visibleColumns,
+    // visibleColumns,
     preGlobalFilteredRows,
     setGlobalFilter,
   } = useTable(
@@ -251,6 +286,9 @@ function App() {
               globalFilter={state.globalFilter}
               setGlobalFilter={setGlobalFilter}
             />
+            <button onClick={generateEntities} className="GenBtn">
+              Generate 200 entities
+            </button>
           </div>
           <div className="MidBotLayout">
             <div className="Middle">
@@ -330,7 +368,9 @@ function App() {
               </TableScrollbar>
             </div>
             <div className="Bottom">
-              <button onClick={addEntities}>Dodaj entitete v tabelo</button>
+              <button onClick={addEntities} className="addBtn">
+                Add entities in table
+              </button>
             </div>
           </div>
         </div>

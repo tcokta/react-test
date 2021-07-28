@@ -58,13 +58,24 @@
   height: 10vh;
   /* float:inline-end; */
 }
-button {
+.addBtn {
   background-color: #024a69;
   color: #ffffff;
   font-size: 20px;
   padding: 10px 60px;
   border-radius: 5px;
   margin: 10px 0px;
+  cursor: pointer;
+}
+.GenBtn{
+  background-color: #d086df;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 50px 0px;
+  width:200px;
+  height: auto;
   cursor: pointer;
 }
 thead {
